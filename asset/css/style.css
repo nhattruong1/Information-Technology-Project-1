@@ -96,6 +96,17 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  .header-nav-main ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .header-nav-main ul li {
+      padding: 24px 20px;
+      color: #000000;
+      font-weight: 400;
+      font-family: "TradeGothic";
+      font-size: 16px;
+      cursor: pointer; }
   .header-nav-main-logo {
     width: 246px;
     padding: 24px 0; }
@@ -127,25 +138,141 @@ p {
 .body {
   margin-top: 110px; }
   .body .banner-card {
+    margin-top: 30px;
     text-align: center; }
     .body .banner-card p {
       margin-bottom: 0;
       font-size: 16px;
       color: #000000; }
     .body .banner-card-title {
-      font-family: "Anton", sans-serif; }
+      font-family: "Anton", sans-serif;
+      font-size: 72px !important;
+      letter-spacing: 0px;
+      height: 90px; }
+    .body .banner-card .list-button {
+      margin-top: 20px; }
+      .body .banner-card .list-button input {
+        border: 0;
+        color: #ffffff;
+        background-color: #000000;
+        padding: 8px 30px;
+        border-radius: 40px; }
+  .body .sustainable-materials-title {
+    font-weight: 500;
+    font-size: 24px;
+    color: #000000; }
+  .body .sustainable-materials-products {
+    overflow: auto;
+    white-space: nowrap; }
+  .body .sustainable-materials-product {
+    display: inline-block;
+    width: 400px;
+    height: 467px;
+    margin-right: 15px; }
+  .body .sustainable-materials img {
+    width: 100%; }
+  .body .sustainable-materials-product-info {
+    margin-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%; }
+    .body .sustainable-materials-product-info p {
+      margin-bottom: 0; }
+    .body .sustainable-materials-product-info .name-product, .body .sustainable-materials-product-info .cost-product {
+      color: #000000; }
+  .body .trending {
+    margin-top: 40px; }
+    .body .trending-title {
+      font-weight: 500;
+      font-size: 24px;
+      color: #000000; }
+    .body .trending-banner-left {
+      background: url("/asset/img/banner/nike-just-do-it (1).jpg");
+      background-position: center;
+      height: 700px; }
+      .body .trending-banner-left-detail {
+        position: absolute;
+        left: 40px;
+        bottom: 20px; }
+      .body .trending-banner-left-detail-title {
+        font-size: 20px;
+        color: #ffffff; }
+      .body .trending-banner-left input {
+        border: 0;
+        background-color: #ffffff;
+        border-radius: 30px;
+        margin-right: 10px; }
+    .body .trending-banner-right {
+      background-image: url("/asset/img/banner/banner_right.gif");
+      background-position: center;
+      height: 700px;
+      background-size: cover; }
+      .body .trending-banner-right-detail {
+        position: absolute;
+        left: 40px;
+        bottom: 20px; }
+      .body .trending-banner-right-detail-title {
+        font-size: 20px;
+        color: #f08aacbb; }
+      .body .trending-banner-right input {
+        border: 0;
+        color: #ffffff;
+        background-color: #f08aacbb;
+        border-radius: 30px;
+        margin-right: 10px; }
+  .body .featured {
+    margin: 40px auto; }
+    .body .featured-title {
+      font-weight: 500;
+      font-size: 24px;
+      color: #000000; }
+    .body .featured-banner {
+      background: url("/asset/img/banner/nike-just-do-it (2).jpg");
+      background-position: center;
+      background-size: cover;
+      height: 500px;
+      position: relative; }
+      .body .featured-banner-detail {
+        position: absolute;
+        left: 40px;
+        bottom: 20px; }
+        .body .featured-banner-detail-title {
+          font-family: "Anton", sans-serif;
+          font-size: 72px !important;
+          letter-spacing: 0px;
+          width: 500px;
+          line-height: 70px;
+          color: #ffffff; }
+        .body .featured-banner-detail-button input {
+          border: 1px solid #000000;
+          background-color: #ffffff;
+          border-radius: 30px; }
 
-ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-  ul li {
-    padding: 24px 20px;
-    color: #000000;
-    font-weight: 400;
-    font-family: "TradeGothic";
-    font-size: 16px;
-    cursor: pointer; }
+.footer {
+  background-color: #111111;
+  padding-top: 40px; }
+  .footer p {
+    margin: 0;
+    color: #757575;
+    font-size: 11px;
+    text-align: center; }
+  .footer hr {
+    background-color: #757575;
+    opacity: 50%; }
+  .footer a {
+    font-size: 13px; }
+  .footer a:hover {
+    color: #ffffff !important; }
+  .footer li {
+    margin-bottom: 3px; }
+  .footer-top-icon {
+    float: right; }
+    .footer-top-icon a {
+      margin-left: 20px; }
 
 .ct {
   display: -webkit-box;
@@ -167,7 +294,7 @@ ul {
           justify-content: flex-end; }
 
 .pd-l {
-  padding: 10px 28px 10px 28px; }
+  padding: 8px 28px 8px 28px; }
 
 .bd {
   -webkit-box-shadow: inset -1px 0 0 0 #e5e5e5;
@@ -180,3 +307,30 @@ ul {
   color: #000000 !important;
   -webkit-box-shadow: inset 0 -2px 0 0 #000000;
           box-shadow: inset 0 -2px 0 0 #000000; }
+
+.sustainable-materials-products::-webkit-scrollbar-track {
+  border-radius: 10px !important;
+  background-color: #e5e5e5; }
+
+.sustainable-materials-products::-webkit-scrollbar {
+  height: 4px;
+  cursor: pointer;
+  background-color: #e5e5e5;
+  border-radius: 10px; }
+
+.sustainable-materials-products::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #757575; }
+
+.title-footer {
+  color: #ffffff !important;
+  font-family: "TradeGothic";
+  font-size: 15px !important; }
+
+.social-link-icon {
+  fill: #757575;
+  -webkit-transition: fill .2s;
+  transition: fill .2s; }
+
+.social-link-icon:hover {
+  fill: #ffffff; }
