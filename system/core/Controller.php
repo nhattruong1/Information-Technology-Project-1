@@ -99,5 +99,28 @@ class CI_Controller {
 	{
 		return self::$instance;
 	}
+	protected function printJson($data = null)
+	{
+		$this->output->set_output($this->getJsonText($data));
+	}
 
+	public function getJsonText($data = null)
+	{
+		$json = "";
+		if(empty($data)){
+			$response = [
+				'code' => "404",
+				'message' => 'Not Found',
+				'data' => ""
+			];
+		}else{
+			$response = [
+				'code' => "200",
+				'message' => 'OK',
+				'data' => $data === null ? "" : $data
+			];
+		}
+		$json = json_encode($response, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
+		return $json;
+	}
 }
