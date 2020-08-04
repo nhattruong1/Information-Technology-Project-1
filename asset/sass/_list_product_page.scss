@@ -1,4 +1,8 @@
 .shoes{
+	.row{
+		margin-top: 20px;
+	}
+	margin-top: 30px;
 	&-title{
 		h1{
 			font-size: 24px !important;
@@ -33,6 +37,28 @@
 			&-price-detail{
 				color: $color-black;
 			}
+		}
+	}
+}
+.list-category{
+	a{
+		color: $color-black !important;
+	}
+	a:hover{
+		color: $color-gray !important;
+	}
+	li{
+		margin-bottom: 10px;
+	}
+	&-gender{
+		li{
+			display: block;
+			margin-bottom: 5px;
+		}
+		label{
+			color: $color-black !important;
+			margin-bottom: 0;
+			font-size: 16px;
 		}
 	}
 }

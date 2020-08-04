@@ -335,28 +335,46 @@ p {
 .social-link-icon:hover {
   fill: #ffffff; }
 
-.shoes-title h1 {
-  font-size: 24px !important; }
-.shoes .col-md-4 {
-  margin-bottom: 30px; }
-.shoes .product-item p {
-  margin-bottom: 0; }
-.shoes .product-item .product-img {
-  display: inline-block;
-  overflow: hidden;
-  height: 320px; }
-  .shoes .product-item .product-img img {
-    width: 100%;
-    position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%); }
-.shoes .product-item .product-card-detail {
-  float: left; }
-.shoes .product-item .product-card-price {
-  float: right; }
-.shoes .product-item .product-card-detail-name, .shoes .product-item .product-card-price-detail {
-  color: #000000; }
+.shoes {
+  margin-top: 30px; }
+  .shoes .row {
+    margin-top: 20px; }
+  .shoes-title h1 {
+    font-size: 24px !important; }
+  .shoes .col-md-4 {
+    margin-bottom: 30px; }
+  .shoes .product-item p {
+    margin-bottom: 0; }
+  .shoes .product-item .product-img {
+    display: inline-block;
+    overflow: hidden;
+    height: 320px; }
+    .shoes .product-item .product-img img {
+      width: 100%;
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%); }
+  .shoes .product-item .product-card-detail {
+    float: left; }
+  .shoes .product-item .product-card-price {
+    float: right; }
+  .shoes .product-item .product-card-detail-name, .shoes .product-item .product-card-price-detail {
+    color: #000000; }
+
+.list-category a {
+  color: #000000 !important; }
+.list-category a:hover {
+  color: #757575 !important; }
+.list-category li {
+  margin-bottom: 10px; }
+.list-category-gender li {
+  display: block;
+  margin-bottom: 5px; }
+.list-category-gender label {
+  color: #000000 !important;
+  margin-bottom: 0;
+  font-size: 16px; }
 
 #carouselExampleControls {
   background-color: #F7F7F7;
