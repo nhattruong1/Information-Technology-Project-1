@@ -12,3 +12,5 @@ $route['api/v1/provinces/(:num)'] = '/api/address/API_A_2/getList/$1';
 //API lấy danh sách quận theo tỉnh: api/v1/district/56
 $route['api/v1/district/(:num)'] = '/api/address/API_A_3/getList/$1';
 
+//API lấy danh sách phường theo quận: api/v1/wards/622
+$route['api/v1/wards/(:num)'] = '/api/address/API_A_4/getList/$1';
