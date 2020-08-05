@@ -388,3 +388,68 @@ p {
   #carouselExampleControls .carousel-item a {
     color: #000000 !important;
     border-bottom: 1px solid; }
+
+.info-product {
+  margin-top: 30px; }
+  .info-product p {
+    margin-bottom: 0; }
+  .info-product-detail-price {
+    font-size: 17px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .info-product-detail-name {
+    font-size: 28px; }
+  .info-product-img img {
+    width: 100%;
+    margin-bottom: 30px; }
+  .info-product .list-button {
+    margin-top: 20px; }
+    .info-product .list-button button {
+      display: block;
+      margin: 0 auto; }
+    .info-product .list-button .button-add {
+      border: 0;
+      color: #ffffff;
+      background-color: #000000;
+      width: 80%;
+      padding: 18px 24px;
+      border-radius: 100px;
+      margin-bottom: 10px; }
+    .info-product .list-button .button-favorite {
+      border: 1px solid #e5e5e5;
+      color: #000000;
+      -webkit-transition: border .55s ease;
+      transition: border .55s ease;
+      background-color: #ffffff;
+      width: 80%;
+      padding: 18px 24px;
+      border-radius: 100px; }
+      .info-product .list-button .button-favorite svg {
+        -webkit-transition: fill .55s ease;
+        transition: fill .55s ease; }
+    .info-product .list-button .button-favorite:hover {
+      border: 1px solid #757575; }
+      .info-product .list-button .button-favorite:hover svg {
+        fill: #CE114F; }
+  .info-product .product-desc {
+    margin-top: 20px;
+    line-height: 28px; }
+
+.accordion button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.accordion:focus svg {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
+.cl-bl {
+  color: #000000; }
