@@ -1,0 +1,122 @@
+.cart{
+	margin: 30px 0; 
+	p{
+		margin-bottom: 0;
+	}
+	&-title{
+		font-size: 28px;
+		font-weight: 700;
+		color:  $color-black;
+		margin-bottom: 10px;
+	}
+	&-detail{
+		margin-top: 40px;
+	}
+	&-list-product-detail{
+		margin-bottom: 30px;
+		height: 240px;
+		border: 1px solid $color-gray;
+		&-img{
+			display: inline-block;
+			width: 240px;
+			overflow: hidden;
+			height: 100%;
+			img{
+				width: 100%;
+				position: relative;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+		}
+		&-info{
+			display: flex;
+			justify-content: space-between;
+			width: 70%;
+			padding: 20px;
+			.product-name{
+				font-size: 20px;
+				font-weight: 700;
+			}
+			.product-cate{
+				color: $color-gray;
+			}
+			.list-button{
+				display: flex;
+				margin-top: 40px;
+				justify-content: space-between;
+				.button-love{
+					button{
+						background-color: $color-white;
+						padding: 5px;
+						border: 1px solid $color-gray;
+					}
+				}
+				.button-remove{
+					button{
+						background-color: $color-white;
+						padding: 5px 15px;
+						border: 1px solid $color-gray;
+					}
+				}
+			}
+		}
+	}
+	&-order-summary-checkout{
+		button{
+			width: 100%;
+			display: flex;
+			justify-content: space-around;
+			border: 1px solid;
+			padding: 10px 0;
+		}
+		.button-checkout{
+			button{
+				color: $color-white;
+				background-color: $color-black;
+				font-family: $font-title;
+				svg{
+					fill: $color-white;
+					transition: margin .45s ease;
+				}
+			}
+			button:focus{
+				svg{
+					margin-right: -50px;
+				}
+			}
+		}
+		.button-paypal{
+			button{
+				background-color: $color-white;
+			}
+		}
+	}
+	&-order-summary-detail{
+		margin-top: 30px;
+		border: 1px solid $color-gray-light;
+		padding: 20px;
+		table,tbody{
+			width: 100%;
+		}
+		td{
+			padding: 10px 0;
+		}
+	}
+	&-order-summary-help{
+		color: $color-black;
+		margin-top: 30px;
+		a{
+			color: $color-black !important;
+		}
+		a:hover{
+			color: $color-white !important;
+			background-color: $color-black;
+		}
+	}
+	&-order-summary-payment-method{
+		margin-top: 30px;
+		img{
+			width: 100%;
+		}
+	}
+}
